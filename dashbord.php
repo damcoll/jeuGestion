@@ -8,8 +8,10 @@
     <title>Document</title>
 </head>
 <body>
-<?php include("initialisation/login.php");?>
-   
-    
+    Bienvenu sur le dashBord
+    <?php 
+        session_start();
+        echo $_SESSION["idJoueur"];
+    ?>
 </body>
 </html>
